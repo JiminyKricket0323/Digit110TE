@@ -1,0 +1,18 @@
+start = xml
+xml = element xml { source, journal }
+source = element source { title, date }
+title = element title { text }
+date = element date { when }
+when = attribute when { text }
+journal =
+    element journal {
+        mixed { (purpose | confession | outcome | enlight)* }
+    }
+purpose = element purpose { why, text }
+why = attribute why { text }
+confession = element confession { honesty, text }
+honesty = attribute honesty { text }
+outcome = element outcome { daily-bases, text }
+daily-bases = attribute daily-bases { "symptoms" | "alerts" }
+enlight = element enlight {realization, text}
+realization = attribute realization{ "standard" }
