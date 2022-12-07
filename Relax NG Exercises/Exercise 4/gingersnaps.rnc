@@ -1,3 +1,40 @@
 datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = xml
 
-element test { xsd:double }
+
+xml = element xml {metadata, recipe}
+
+metadata = element metadata {title, description, prep_time, cooking_time, total_time, servingsize, heading}
+title = element title {text}
+description = element description {text}
+prep_time = element prep_time {text}
+cooking_time = element cooking_time {text}
+total_time = element total_time {text}
+servingsize = element servingsize {text}
+heading = element heading {text,id}
+id = attribute id {xsd:ID}
+
+
+recipe = element recipe {listingred, instrc}
+
+listingred = element listingred {ingred+, QnA, ingredtwo}
+ingred = element ingred {msrmt}
+msrmt = attribute msrmt {id}
+QnA = element QnA {question, answer}
+question = element question {text}
+answer = element answer {text}
+ingredtwo = element ingredtwo {ingred}
+
+instrc = element instrc {step}
+step = element step {n, mixed {(temp | ingred | texture | msrmt | duration)}}
+n = attribute n {xsd:float}
+temp = element temp {xsd:float, text}
+texture = element texture {text}
+duration = element duration {xsd:float, text}  
+
+
+
+
+
+
+

@@ -18,16 +18,16 @@
   </teiHeader>
   <text>
       <body>
-         <head>MARCH 17, 1909 WEDNESDAY</head>
+         <head> <date when="1909-03-17">MARCH 17,1909 </date> WEDNESDAY</head>
          <lg>
-         <l>ST.PATRICK WAS A USEFUF SAINT</l> <!--I WANT TO POINT OUT THE SPELLING MISTAKE HERE-->
-         <l>HE FRIGHTENED ALL THE SNAKES AWAY-</l> <!--i WANT TO POINT OUT "HE" IS REFERRING TO ST.PATRICK-->
-         <l>I WISH HE'D TRY HIS ART ON SMOKE</l> <!--HOW DO I ENCODE THAT THERE WAS A UNDERLINE ON WORD "SMOKE"-->
-         <l>AROUND THE HAMMERMILL SOME DAY!</l>
+            <l> <name type="person">ST.PATRICK </name> WAS A <unclear reason="spelling_mistake">USEFUF</unclear> SAINT</l> 
+         <l> <name type="ST.PATRICK">HE</name> FRIGHTENED ALL THE SNAKES AWAY-</l> 
+         <l>I WISH HE'D TRY HIS ART ON <emph style="underline">SMOKE</emph></l> 
+         <l>AROUND <name type="building">THE HAMMERMILL</name> SOME DAY!</l>
          </lg>
       </body>
      
   </text> 
    
-   <text>add another calender sheets</text>
+   
 </TEI>
