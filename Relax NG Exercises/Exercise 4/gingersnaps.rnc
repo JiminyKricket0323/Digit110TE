@@ -2,7 +2,7 @@ datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
 start = xml
 
 
-xml = element xml {metadata, recipe}
+xml = element xml{metadata, recipe}
 
 metadata = element metadata {title, description, prep_time, cooking_time, total_time, servingsize, heading}
 title = element title {text}
