@@ -12,14 +12,14 @@ cooking_time = element cooking_time {text}
 total_time = element total_time {text}
 servingsize = element servingsize {text}
 heading = element heading {text,id}
-id = attribute id {xsd:ID}
+id = attribute id {xsd:float | "VS" | "GS" | "salt" | "BKS" | "molasses" | "APflour" | "ginger" | "cloves" | "cinnamon" | "mixture" | "placing"} 
 
 
 recipe = element recipe {listingred, instrc}
 
 listingred = element listingred {ingred+, QnA, ingredtwo}
 ingred = element ingred {msrmt}
-msrmt = attribute msrmt {id}
+msrmt = element msrmt {id}
 QnA = element QnA {question, answer}
 question = element question {text}
 answer = element answer {text}
@@ -28,9 +28,9 @@ ingredtwo = element ingredtwo {ingred}
 instrc = element instrc {step}
 step = element step {n, mixed {(temp | ingred | texture | msrmt | duration)}}
 n = attribute n {xsd:float}
-temp = element temp {xsd:float, text}
+temp = element temp {text}
 texture = element texture {text}
-duration = element duration {xsd:float, text}  
+duration = element duration {text}  
 
 
 
