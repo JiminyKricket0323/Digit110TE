@@ -12,9 +12,7 @@ cooking_time = element cooking_time {text}
 total_time = element total_time {text}
 servingsize = element servingsize {text}
 heading = element heading {text,id}
-id = attribute id {xsd:float | "VS" | "GS" | "salt" | "BKS" | "molasses" | "APflour" | "ginger" | "cloves" | "cinnamon" | "mixture" | "placing"} 
-
-
+id = attribute id {xsd:float | "VS" | "GS" | "salt" | "BKS" | "molasses" | "APflour" | "ginger" | "cloves" | "cinnamon" | "mixture" | "placing"}
 recipe = element recipe {listingred, instrc}
 
 listingred = element listingred {ingred+, QnA, ingredtwo}
